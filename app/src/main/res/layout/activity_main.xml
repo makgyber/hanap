@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#ff994499"
+        app:titleTextColor="#FFFFFFFF"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="#FFFFFFFF"
+        android:theme="@style/MyApp.ActionBarTheme"
+        app:popupTheme="@style/Theme.AppCompat.Light"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

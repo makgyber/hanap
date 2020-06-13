@@ -9,6 +9,8 @@
     <androidx.appcompat.widget.Toolbar
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/search_toolbar"
+        app:title=""
+        android:gravity="center_vertical|start"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="#ff994499"
@@ -16,5 +18,17 @@
         android:backgroundTintMode="multiply"
         android:backgroundTint="#FFFFFFFF"
         android:theme="@style/MyApp.ActionBarTheme"
-        app:popupTheme="@style/Theme.AppCompat.Light"/>
+        app:popupTheme="@style/Theme.AppCompat.Light">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:iconifiedByDefault="false"
+            android:focusedByDefault="false"
+            android:focusable="true"
+            android:queryHint="Search products or services"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

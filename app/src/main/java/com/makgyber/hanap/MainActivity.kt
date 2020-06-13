@@ -1,5 +1,6 @@
 package com.makgyber.hanap
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -39,7 +40,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showSearch() : Boolean {
-        Toast.makeText(this, "Search!", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, SearchActivity::class.java)
+        startActivity(intent)
         return true
     }
 
